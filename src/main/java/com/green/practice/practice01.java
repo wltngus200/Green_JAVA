@@ -21,7 +21,7 @@ public class practice01 {
         System.out.println("점수의 평균은 "+(double)(sum/people)+"점입니다.");
         System.out.println("학급의 인원:"+ban.length);
         //위에서 j나 i를 재사용할 수 없어서 설정했음
-        //아마도 for 내에서 설정된 함수이기 때문일 듯.>>맞았다
+        //아마도 for 내에서 설정된 함수이기 때문일 듯>>맞았다(이게 스코프)
         //(수정)새로 사람 수를 변수로 갖는 애를 설정 할 것 없이 length사용
 
     }

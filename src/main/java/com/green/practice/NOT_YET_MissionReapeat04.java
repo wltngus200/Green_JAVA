@@ -2,12 +2,12 @@ package com.green.practice;
 
 import java.util.Scanner;
 
-public class MissionReapeat04 {
+public class NOT_YET_MissionReapeat04 {
     public static void main(String[] args){
         //4. 스캐너 사용해서 값을 입력받기
         //-배열을 활용해서 1개는 반 학생들의 이름 1개는 성적을 입력
 
-        //배열에 문자열 넣을 수 있나?
+        //배열에 문자열 넣을 수 있나??
 
     Scanner scan=new Scanner(System.in);
     System.out.print("학생 수를 입력하세요.");

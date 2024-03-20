@@ -51,7 +51,7 @@ public class practice03_array {
 
         for (int i = 0; i < arw.length; i++) {
             System.out.print("비어서 그런가. 진짜네");
-            //4강 9분 언저리~
+            //4강 9분 언저리~ 이거 복사해온건가
 
         }
         */

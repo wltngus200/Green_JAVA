@@ -21,6 +21,6 @@ public class practice02_Make_a_Tree {
                 System.out.print("*");// *
             }
                 System.out.println(); //한 줄을 채우면 엔터를 친다
-        } //이등변 삼각형 모양
+        } //이등변 삼각형 모양 별
     }
 }
