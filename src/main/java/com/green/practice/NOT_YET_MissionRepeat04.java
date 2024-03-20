@@ -19,6 +19,7 @@ public class NOT_YET_MissionRepeat04 {
         System.out.print((i+1)+"번 학생의 이름을 입력하세요.");
         name[i]=scan.nextLine();//1,2 번 학생이 같이 나오는 이유가 뭐지
         }
+        System.out.println();
         for(int z=0;z<name.length;z++){
         System.out.print((z+1)+"번 점수를 입력하세요.");//새로운 함수! 아니면 학생수+1됨
         score[z]=scan.nextInt();//점수를 입력하는 함수를 안 넣었다
