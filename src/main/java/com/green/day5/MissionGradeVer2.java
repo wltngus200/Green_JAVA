@@ -28,7 +28,7 @@ public class MissionGradeVer2 {
                     grade = "C";
                     break;
             }
-            switch(val2){
+            switch(val2){//범위는 if가 나음
                 case 0:
                 case 1:
                 case 2:
