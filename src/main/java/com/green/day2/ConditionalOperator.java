@@ -3,7 +3,7 @@ package com.green.day2;
 public class ConditionalOperator {
     public static void main(String[] args){
         //삼항식, 조건식
-        //식?T일때:F일때--->구분은 물음표(?)와 콜론(:)으로 한다.
+        //식?T일때:F일때--->구분은 물음표(?)와 콜론(:)으로 한다
        String s="";
        s=10%2==0?"짝":"홀";
        //T면 앞의 것을 사용

@@ -9,7 +9,7 @@ public class If {
         } else {
             System.out.println("n1이 n2보다 미만값입니다.");}
 
-        n2=10;//
+        n2=10;
         if(n1<n2) {
             System.out.println("n2가 크다!");
         } else if (n1>n2){

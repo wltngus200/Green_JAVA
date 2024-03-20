@@ -2,7 +2,7 @@ package com.green.day2;
 
 public class Random {
     public static void main(String[] args) {
-        //형변환, 타입이 안 맞으면 맞게 타입 변화를줘야한다.
+        //형변환, 타입이 안 맞으면 맞게 타입 변화를줘야한다
         //자동형변환, 강제형변환
         System.out.println(Math.random()*10.0);
         //문제가 안 터지면 자동
