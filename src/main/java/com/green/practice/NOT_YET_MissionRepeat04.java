@@ -2,7 +2,7 @@ package com.green.practice;
 
 import java.util.Scanner;
 
-public class NOT_YET_MissionReapeat04 {
+public class NOT_YET_MissionRepeat04 {
     public static void main(String[] args){
         //4. 스캐너 사용해서 값을 입력받기
         //-배열을 활용해서 1개는 반 학생들의 이름 1개는 성적을 입력
@@ -16,8 +16,8 @@ public class NOT_YET_MissionReapeat04 {
     int score[]=new int[stu];
     for(int i=0;i<name.length;i++){//for에 자꾸 세미콜론 찍지 말라고 ㅠㅠ
         for(i=0;i<name.length;i++){
-            System.out.print((i+1)+"번 학생의 이름을 입력하세요.");
-            name[i]=scan.nextLine();
+        System.out.print((i+1)+"번 학생의 이름을 입력하세요.");
+        name[i]=scan.nextLine();//1,2 번 학생이 같이 나오는 이유가 뭐지
         }
         for(int z=0;z<name.length;z++){
         System.out.print((z+1)+"번 점수를 입력하세요.");//새로운 함수! 아니면 학생수+1됨
