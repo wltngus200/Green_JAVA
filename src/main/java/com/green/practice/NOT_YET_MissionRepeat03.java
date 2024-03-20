@@ -39,5 +39,9 @@ public class NOT_YET_MissionRepeat03 {
                 System.out.print("*");
             }System.out.println();
         }
+
+        //4)역삼각형 별찍기
+        //5)다이아몬드 만들기
+        //6)%d를 이용해 가능하다면 트리 만들기
     }
 }
