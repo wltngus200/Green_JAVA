@@ -8,7 +8,7 @@ public class MissionSumWhileLoop {
 
         int sum=0;
         int input=0;
-        //입력한 숫자를 모두 더한 값 출력
+        //입력한 숫자를 모두 더한 값 출력하기
 
         /*
         while(true) {

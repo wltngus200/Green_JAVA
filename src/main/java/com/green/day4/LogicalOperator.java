@@ -13,7 +13,7 @@ public class LogicalOperator {
         System.out.println();
 
         //&&는 모두 옳아야함 ||하나만 참이 있으면 됨
-        //&&는 true가 나오기 어려움 ||는 거짓이 나오기 어려움
+        //&&는 true가 ||는 거짓이 나오기 어려움
 
         System.out.println();
         boolean k1=true||true||false;

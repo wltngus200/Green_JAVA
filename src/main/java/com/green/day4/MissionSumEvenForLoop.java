@@ -14,7 +14,7 @@ public class MissionSumEvenForLoop {
 
         int sum2=0;
         for(int s=2;s<=345;s+=2){
-            //증감식 : i++이 결국 i=i+1
+            //증감식 : i++이 결국 i=i+1/
             // >>'s+=2' 나 's=s+2'로 넣으세요
                 sum2=sum2+s;
         }

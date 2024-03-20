@@ -9,7 +9,7 @@ public class VarScope {
             int num=10;
             System.out.println(num);
         }
-        //System.out.println(num);//중괄호 바깥이라서 비활성화 됨
+        //System.out.println(num);//중괄호 바깥이라서 비활성화
 
         if(1>0){
             int num=15;

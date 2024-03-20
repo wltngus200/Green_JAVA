@@ -14,7 +14,7 @@ public class MissionStarTriangle {
             //star 내가 사이즈 5의 별을 찍고싶다
             for (int z=0; z<=i; z++) {//(초기화, 조건식, 증감식)
                 //0(z)<=0(i) true이기 때문에 1번 실행 1<=1 2번 실행
-                //i의 최대값=(star-1) 0~(star-1)까지 반복=star회 반복
+                //i의 최대값=(star-1) 0~(star-1) 반복=star회 반복
                 System.out.print("*");
             }
             System.out.println();

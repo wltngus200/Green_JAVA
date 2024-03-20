@@ -9,7 +9,7 @@ public class WhileLoop {
         while (i < 10) {//조건식
             System.out.println(i);
             i++;//증감식
-        } for는 정해진 회수, while은 조건은 알고 회수는 모를때
+        } for는 정해진 회수, while은 조건은 알고 회수는 모를 때
         System.out.println("종료");
         */
 

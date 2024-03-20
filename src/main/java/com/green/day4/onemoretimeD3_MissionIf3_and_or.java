@@ -11,7 +11,7 @@ public class onemoretimeD3_MissionIf3_and_or {
         int height=scan.nextInt();
 
         /*int standHeight=175;
-        System.out.print("당신은");
+        System.out.print("당신은" );
         if("남".equals(gender)||"여".equals(gender)){
             if("남".equals(gender)){
                 System.out.print("남자 ");
