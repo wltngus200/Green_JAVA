@@ -4,7 +4,7 @@ public class MissionSumEvenForLoop {
     public static void main(String[] args) {
         //1~100까지 짝수만 더한 값 출력
         int sum=0;
-        for(int i=1;i<=345;i++){//조건을 따지지 않고 홀수까지 카운트 해야함=비효율
+        for(int i=1;i<=345;i++){//조건을 따지지 않고 홀수까지 카운트=비효율
             if(i%2==0){
                 sum=sum+i;
             }

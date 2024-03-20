@@ -24,7 +24,7 @@ public class MissionStarTriangle {
         System.out.println("방법2");
 
         for(int s=1;s<=star;s++){//1,2,3...star까지 = 줄 개수
-            for(int h=0;h<s;h++){//0<1트루여서 1번 / s의 최대값=star
+            for(int h=0;h<s;h++){//0<1트루여서 1번 /s의 최대값=star
                 System.out.print("*");
             }
             System.out.println();

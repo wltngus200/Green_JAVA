@@ -10,7 +10,7 @@ public class DoWhileLoop {
         do {
             System.out.print("숫자를 입력해주세요.(종료:0)");
             input=scan.nextInt();
-        } while(input!=0);//
+        } while(input!=0);
 
         System.out.println("종료");
         //

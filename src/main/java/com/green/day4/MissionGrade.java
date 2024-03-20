@@ -13,7 +13,7 @@ public class MissionGrade {
             else if(score>=70) {grade="C";}
             //그 외는 다 F기 때문에 else 불필요
             System.out.printf("당신의 점수는 %d, 학점은 %s입니다.\n",score,grade);
-            //%s문자열 %d? %f정수 %b불린
+            //%s문자열 %d? %f정수 %b 불린
         }
 
         /*

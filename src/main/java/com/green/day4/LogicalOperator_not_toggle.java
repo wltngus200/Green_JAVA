@@ -14,8 +14,8 @@ public class LogicalOperator_not_toggle {
         //!=비교연산자
         //! 논리연산자
 
-        //toggle 토글: 누르는 거만 가능한 버튼 
-        //누를 때마다 값이 바뀜(누르면 켜지고 누르면 꺼지기)
+        //toggle 토글: 누르는 거만 가능한 버튼
+        //누를 때마다 값이 바뀜(누르면 켜지고 꺼지기)
         //like 좋아요 버튼
         boolean tg=true;
         tg=!tg;//반대로 바뀜

@@ -2,7 +2,7 @@ package com.green.day4;
 
 public class ContinueBreak {
     public static void main(String[] args){
-        //반복문에서 사용 컨티뉴는 스킵, 브레이크(박살)는 스탑
+        //반복문에서 사용, 컨티뉴는 스킵, 브레이크(박살)는 스탑
         for(int i=0;i<10;i++) {
             System.out.println(i);
         }

@@ -2,7 +2,8 @@ package com.green.day4;
 
 public class VarScope {
     public static void main(String[] args){
-        //스코프:변수가 선언이 되면 그 변수를 감싼 중괄호. 중괄호 바깥에선 변수가 비활성화
+        //스코프:변수가 선언이 되면 그 변수를 감싼 중괄호
+        //중괄호 바깥에선 변수가 비활성화
 
         if(1>0){
             int num=10;

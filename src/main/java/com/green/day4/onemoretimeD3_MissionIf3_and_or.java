@@ -15,7 +15,7 @@ public class onemoretimeD3_MissionIf3_and_or {
         if("남".equals(gender)||"여".equals(gender)){
             if("남".equals(gender)){
                 System.out.print("남자 ");
-            }else {
+            } else {
                 standHeight=161;
                 System.out.print("여자 ");
             }
