@@ -2,7 +2,7 @@ package com.green.day3;
 
 public class StringEquals {
     public static void main(String[] args){
-        String s1="안녕";
+        String s1="안녕";//
         String s2="안녕";
         System.out.println(s1==s2);
         System.out.println(s1.equals(s2));
