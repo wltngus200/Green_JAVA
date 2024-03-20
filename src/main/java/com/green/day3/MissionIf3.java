@@ -13,7 +13,7 @@ public class MissionIf3 {
         if("남".equals(gender)){
             if (height > 175) {
                 System.out.println("당신은 평균보다 큽니다.");
-                //당신은~~니다. 같은 중복된 코드를 줄일 필요가 있다.
+                //당신은~~니다. 같은 중복 코드를 줄일 필요가 있다.
             } else if(height<175){
                 System.out.println("당신은 평균보다 작습니다.");
             } else {

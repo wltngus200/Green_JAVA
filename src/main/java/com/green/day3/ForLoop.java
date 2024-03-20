@@ -9,11 +9,12 @@ public class ForLoop {
             System.out.println("Nice to meet you.");
         }
         */
+
         /*
         for(int j=5;j<11;j++){
             System.out.println((j-4)+".안녕");
         }
-         */
+        */
 
         for(int i=100;96<i;i--){
             System.out.println("Bye~");
