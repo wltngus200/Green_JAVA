@@ -16,6 +16,7 @@ public class PrintFormat {
         System.out.printf("finger=[%5d]\n",finger);//우측정렬 =[   10]
         System.out.printf("finger=[%-5d]\n",finger);//좌측정렬 =[10   ]
         System.out.printf("finger=[%05d]\n",finger);//빈칸 대신 0을 넣음 =[00010]
+        //21 이걸 콘솔에 찍는게 목표 후에는 스트링에 저장하는 게 목적 거기에 필요 %05d가 유용! 이유는 달력찍기(아래)
             //이스케이프 문자 \n=%n(다른 언어에서도 되는진 모르겠당)
 
         System.out.printf("big=%d\n",big);
@@ -39,7 +40,9 @@ public class PrintFormat {
         System.out.printf("d=%f\n",d);//=1.234568로 반올림(정확한 값이 아니라 근사치)
         System.out.printf("d=%.2f\n",d);//=1.23 소수점 두 자리에서 끊어 반올림
         System.out.printf("d=%10.2f\n",d);//=(여백)1.23 전체 10자리 중에 소수점은 2자리만
+        System.out.printf("d=%010.2f\n",d);//21일 정정
             // 010.2f로 여백을 0으로 채우기도 가능!
+            //21 소수점 자르기에 유용!
         //실수값=%f
 
         System.out.printf("[%s]\n",url);//일반

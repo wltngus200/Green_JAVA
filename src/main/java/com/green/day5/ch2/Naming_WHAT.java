@@ -1,8 +1,6 @@
 package com.green.day5.ch2;
 
-import java.io.PrintStream;
-
-public class Naming {
+public class Naming_WHAT {
     public static void main(String[] args){
         //[네이밍 규칙]
 
@@ -24,14 +22,21 @@ public class Naming {
 
                 //파스칼케이스=단어 첫글자가 모두 대문자
                 //카멜케이스=첫 단어 이외 단어의 첫글자 모두 대문자(like 낙타)
+                    //21>>케밥 케이스 기법(자바에선 쓸 수 없음, css) ex.happy-sunday-morning
+                    //    스네이크 케이스(데이터베이스에 사용) ex.happy_sunday_morning
 
         //상수 명명규칙(final)=한 번 명명하면 변경 X
             //1. 상수 이름은 모두 대문자 단어구분 '_'로 구분
                 //ex. LAST_INDEX_OF, STRING_BUFFER
             //2. 1번 작성법은 primitive type(=소문자 ex.int, double)일 때 하는 편
                 //final String NAME처럼 String도 씀
+
+
+        //잘 모르겠다 이게 뭐지
                 //PrintStream ps=System.out;
-                    //=> out에 final 내가 가리키는게 바뀌지 않았으면 함
+                    //=> out에 마우스를 올려보면 뜨는 창-> final 내가 가리키는게 바뀌지 않았으면 함
+                    //21일 추가 ..이 붙어있는 건 클래스 명
+                        //스트링도 프라모티브 타입도 아님
                 //마우스를 얹으면 타입이 보임(속성=멤버필드)
 
 
