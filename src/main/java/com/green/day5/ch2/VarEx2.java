@@ -6,7 +6,7 @@ public class VarEx2 {
         System.out.println("x:"+x+" y"+y);
 
         //두 수를 서로 교환한다 단 숫자를 사용할 순 없다.
-
+        //스와핑
         int a=x;
         x=y;
         y=a;

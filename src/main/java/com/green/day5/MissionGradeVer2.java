@@ -9,7 +9,7 @@ public class MissionGradeVer2 {
         //1의 자리 0~2 - 3~6 0 7~9+
 
         int val1=score/10;
-        int val2=score%10; //노드 나머지
+        int val2=score%10; //모드 나머지
 
         if(score>100||score<0){
             System.out.println("올바른 점수가 아닙니다.");
