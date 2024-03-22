@@ -17,8 +17,10 @@ public class FlowEx2 {
             System.out.println("입력하신 숫자는 0입니다.");
         } else {
             System.out.printf("입력하신 숫자는 0이 아닙니다.\n" +
-                    "입력하신 숫자는 %d입니다.",number);
-        }
+                                                "입력하신 숫자는 %d입니다.",number);
 
+        }
+        String.format("입력하신 숫자는 0이 아닙니다. 입력하신 숫자는 %d입니다.\n",number);
+        //인 풋이 목적인 것과 아웃풋이 목적인 것
     }
 }
