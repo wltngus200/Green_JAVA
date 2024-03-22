@@ -1,4 +1,4 @@
-package com.green.day6.ch2;
+package com.green.day6.ch3;
 
 public class OperatorEx23 {//p.113
     public static void main(String[] args){
@@ -16,7 +16,7 @@ public class OperatorEx23 {//p.113
         System.out.println("str2:"+str2);
         System.out.println("str1==str2 "+(str1==str2));//false
         System.out.println("str1.equals(str2) "+(str1.equals(str2)));//false
-        //동등성:지위, 권리, 권한 //동일성: 같다
+        //동등성:지위, 권리, 권한 //22.equals(깃허브 참고) //동일성: 같다 ==
         //같은 주소값이 있는지 동일한지
     }
 }

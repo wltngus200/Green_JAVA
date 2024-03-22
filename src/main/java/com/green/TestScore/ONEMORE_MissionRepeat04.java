@@ -1,10 +1,10 @@
-package com.green.practice;
+package com.green.TestScore;
 
 import java.util.Scanner;
 
 public class ONEMORE_MissionRepeat04 {
     public static void main(String[] args){
-        //4. 스캐너 사용해서 값을 입력받기
+        //스캐너 사용해서 값을 입력받기
         //-배열을 활용해서 1개는 반 학생들의 이름 1개는 성적을 입력
         //배열에 문자열 넣을 수 있나??
         //이름 배열과 성적 배열을 만들어서 두개의 같은 첨자를 출력하면 해당 학생 성적 나옴
@@ -15,7 +15,6 @@ public class ONEMORE_MissionRepeat04 {
     int stu=scan.nextInt();//받은 값이 학생의 수
     String[] name=new String[stu];//학생 수만큼의 이름 배열=출석부
     int[] score=new int[stu];//학생 수 만큼의 점수
-    //뭐지 뭐가 문제지??
 
     for(int u=0;u<stu;u++){//학생 이름 입력
         System.out.print((u+1)+"번 학생의 이름을 입력하세요.");

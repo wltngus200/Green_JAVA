@@ -20,11 +20,13 @@ public class OperatorEx1 {
     i=5;
     z=i++; //i가 가진 값을 복사해서 z에게 줘야해서 read write같이
         //read 먼저! i를 가져와서 z에게 줌, 그다음에 올림
+        //22 읽기먼저 그다음에 쓰기
     System.out. printf("i: %d,z: %d\n",i,z);
 
     i=5;
     z=0;
     z=++i;//먼저 쓰고 읽음 i를 먼저 올리고 z에게 줌
+    // 22 쓰기먼저 읽기 나중
     System.out. printf("i: %d,z: %d\n",i,z);
 
     //예제

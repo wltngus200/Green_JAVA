@@ -10,7 +10,7 @@ public class OperatoreEx19 {
         int x2=7;
         System.out.printf("x2%%y=%d\n",x2%y);
         System.out.printf("x2/y=%d\n",x2/y);
-
+        //22 7%8=7 나눌수 없기 때문
         System.out.println(10%8);//2
         System.out.println(-10%8);//-2
         System.out.println(10%-8);//2
