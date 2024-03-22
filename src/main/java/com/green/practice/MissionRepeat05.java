@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MissionRepeat05 {
     public static void main(String[] args){
         //5. 설문조사를 가정해서 같은 답변을 한 사람을 같은 그룹에 넣는다(.equals활용)
+        //switch 를 활용하면 안 써도 되지만 연습겸..
         //반장선거나 인기투표 사람들 표 양을 .length로 분석해서 누가 제일 큰지 추출!
 
         Scanner cap=new Scanner(System.in);

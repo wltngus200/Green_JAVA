@@ -12,7 +12,8 @@ public class FlowEx2 {
         Scanner scan=new Scanner(System.in);
         System.out.print("숫자를 하나 입력하세요.");
         String xnumber=scan.nextLine();
-        int number=Integer.parseInt(xnumber);
+        int number=Integer.parseInt(xnumber);//문자를 숫자로 전환
+
         if(number==0){
             System.out.println("입력하신 숫자는 0입니다.");
         } else {
