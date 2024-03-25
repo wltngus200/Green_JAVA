@@ -23,5 +23,6 @@ public class FlowEx2 {
         }
         String.format("입력하신 숫자는 0이 아닙니다. 입력하신 숫자는 %d입니다.\n",number);
         //인 풋이 목적인 것과 아웃풋이 목적인 것
+        //문자열을 만드는 역할
     }
 }

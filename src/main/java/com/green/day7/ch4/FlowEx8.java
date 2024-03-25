@@ -13,9 +13,11 @@ public class FlowEx8 {
         String adress=scan.nextLine();
 
         char num=adress.charAt(7);//문자열에서 원하는 자리 추출
+        //0에서 시작?
 
         String gender=switch(num){
             case '1','3' -> "남자";
+            //case 1,3하면 정수형 //정수값으로 비교해 위의 문자가 정수로 바뀜
             case '2','4' -> "여자";
             default -> "유효한 값을 입력하세요";
         }; System.out.print(gender);

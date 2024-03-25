@@ -7,7 +7,7 @@ public class FlowEx5 {
         //중첩 if문 사용
         //Scanner를 통해 정수로 점수를 입력 받기
         //~90 A ~80 B + 0~2 - 3~6 0 7~9 +
-        //C는 그냥
+        //C는 그냥 ->(수정)C0로 뜰 수 있게
         Scanner scan=new Scanner(System.in);
         System.out.print("점수를 입력해주세요.");
         int score=scan.nextInt();
