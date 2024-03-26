@@ -10,8 +10,9 @@ public class FlowEx18 {
                 //단 찍고 선이 아니고 선 찍고 단이면 하기 수월
                 break;
             }else{
-                System.out.println("-----");
+                System.out.println("-------");
             }
         }//이중 포문=시계 //빠르게 도는 게 분=안 쪽 for문
+        //어떠한 역할을 하는 리터럴은 변수를 주는게 좋음 시작단, 끝단
     }
 }
