@@ -36,7 +36,7 @@ public class ArrayStudy {
         numArr2[1]=25;//수정 write
         System.out.print("numArr2[1]= "+numArr2[1]);
 
-        //문자열 여러개 저장
+        //문자열 여러개 저장 //String arr[]=스트링이 여러개인 배열
         String[] strArr=new String[10];
 
         String[] strArr2=new String[5];//이콜(=)로 저장되는 값은 1개 //주소값 딱 1개만 저장
@@ -48,7 +48,7 @@ public class ArrayStudy {
         for(int i=0;i<numArr.length;i++){
 
         /*
-        배열을 사용하는 이유:같은 값의 여러 값을 '편하게' 저장하기 위해
+        배열을 사용하는 이유:같은 타입의 여러 값을 '편하게' 저장하기 위해
         배열의 특징: 크기는 고정, 생성하고 난 후에 크기 수정 불가능
                     index사용 (0번부터 사용, 마지막 값은 배열 크기 n-1값)
                     for문과 자주 함께 사용함(for int i=0의 이유)
