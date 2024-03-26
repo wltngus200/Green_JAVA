@@ -3,9 +3,9 @@ package com.green.TestScore;
 public class ClassTest {
     public static void main(String[] args){
         //가입신청서 양식대로 제출
-        Club kim=new Club("kim",981225,202405181);
-        Club lee=new Club("lee",940314,202806291);
-        Club son=new Club("son",880201,201109172);
+        Club kim=new Club("kim",981225,202405181, "생명과학과");
+        Club lee=new Club("lee",940314,202806291, "수학과");
+        Club son=new Club("son",880201,201109172,"국어국문학과");
         //class라는 신청서를 쓰고 회원이 된다
 
         String[] member={"kim","lee","son"};//이걸 자동적으로 작성 해줬으면
@@ -16,7 +16,8 @@ public class ClassTest {
         System.out.print(kim.partyday()==today);
         for(int i=0;i<member.length;i++) {
             if (kim.partyday()==today) {
-                //kim.party해야 생일 날짜만 나옴
+                //kim.partyday해야 생일 날짜만 나옴->그걸 배열이나 뭐나 이런 걸로 차례로 하고 싶음 ㅠ
+                //이름을 뽑아내고 싶은데? 이름을 뽑아내려면 이름을 알아야되는 상황 ㅋㅋㅋ
                 //이 부분을 각 멤버 별로 설정해서
                 System.out.printf("happy birthday! %s\n", member[i]);
             }
@@ -27,14 +28,16 @@ class Club{//멤버 리스트 양식을 별도의 장부에 관리한다고 생�
     private String name;
     private int birthday;
     private long stu_id;
+    private String major;
 
-    Club(String name,int birthday, long stu_id) {//가입신청서
-        this.name = name;//이 란에는 이걸 쓰세요
-        this.birthday = birthday;
+    Club(String name,int birthday, long stu_id, String major) {//가입신청서
+        this.name = name;//멤버변수 = 인수 형태
+        this.birthday = birthday; //이 란에는 이걸 쓰세요
         this.stu_id = stu_id;
+        this.major = major;
     }
         String getName(){//회원 실적+신상 조회?
-        //앞에 적힌게 리턴하는 값
+        //앞에 적힌 타입이 리턴하는 타입
             return name;
         }
         long getStu_id(){
@@ -42,6 +45,9 @@ class Club{//멤버 리스트 양식을 별도의 장부에 관리한다고 생�
         }
         int getBirthday(){
             return birthday;
+        }
+        String getMajor(){
+            return major;
         }
         int partyday(){
             int party=birthday%10000;
