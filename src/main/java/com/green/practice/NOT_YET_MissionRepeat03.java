@@ -2,6 +2,7 @@ package com.green.practice;
 
 public class NOT_YET_MissionRepeat03 {
     public static void main(String[] args){
+        //★★★반복을 거듭할 때마다 바뀌는 수치는 변수를 활용★★★
         //3. 반복으로 별찍기(사각형 삼각형 다이아몬드)
 
         //1)5*5의 정사각형으로 별 찍기
@@ -30,15 +31,27 @@ public class NOT_YET_MissionRepeat03 {
         System.out.println("가로3*세로7의 직사각형 2");
         System.out.println();
 
-        //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
-        //3)마지막 줄 별이 6개인 6줄짜리 삼각형
-        //우선 줄 개수는 6개여야 되니까
-        for(int m=0;m<6;m++){
-            //1번줄 1개, 2번줄 2개 찍으며 반복 필요
-            for(int n=1;n<=7;n++){
+        //3)우측 정렬한 직각 삼각형
+        for(int m=1;m<=4;m++){//우선 줄 개수는 4개여야 되니까
+            //1번줄 1개, 2번줄 3개 찍으며 반복 필요
+            for(int x=3;x>=m;x--) {//여백의 개수 3 2 1
+                System.out.print(" ");
+            }
+            for(int n=0;n<m;n++){
                 System.out.print("*");
             }System.out.println();
-        }
+        }System.out.println("우측 정렬한 직각삼각형");
+        System.out.println();//의도한 건 아닌데 ㅋㅋ
+
+        //4)가운데로 맞춰진 마지막 줄 별이 7개인 4줄짜리 삼각형 1-3-5-7
+        for(int a=0;a<7;a+=2){//줄의 개수 2씩 증가시켜 0246 4줄
+            for(int b=3;b>=a;b--){//3210으로 줄어들어야 함
+                System.out.print(" ");
+            }
+            for(int c=0;c<7;c++){
+                System.out.print("*");
+            }
+        }System.out.println();
 
         //4)역삼각형 별찍기
         //5)다이아몬드 만들기
