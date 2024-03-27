@@ -1,8 +1,9 @@
 package com.green.TestScore;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class ONEMORE_MissionRepeat04 {
+public class MissionRepeat04 {
     public static void main(String[] args){
         //스캐너 사용해서 값을 입력받기
         //-배열을 활용해서 1개는 반 학생들의 이름 1개는 성적을 입력
@@ -40,6 +41,10 @@ public class ONEMORE_MissionRepeat04 {
         System.out.print(name[i]+":");
         System.out.println(score[i]);//위는 엔터 없고 밑엔 있어야지
     }
+    System.out.println(Arrays.toString(name));
+    System.out.println(Arrays.toString(score));
+    //배열 출력방법
+
     //실수리스트
         // 점수 입력받는 메서드 안 넣기
         // 2번째 변수 재설정 안 해서 학급 인원수(input값)+1하기

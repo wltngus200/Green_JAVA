@@ -20,21 +20,17 @@ public class FlowEx29 {
 
         //3의 배수를 거르면 안 됨 33 30의 짝의 개수가 다름
         for(int z=1;z<=100;z++){
-            int copyi=i;
-            int namuji;
-            while(true){
-                copyi/=copyi/10;
-                //(copyi%3==0?"짝":"");//1의자리가 3으로 나누어 떨어지는지
-                copyi=copyi/10;
-                namuji=i%10;
-                if(copyi>10){
-                    //  ((copyi%10)%3==0?"짝":"")//1의 자리가 3으로 나누어 떨어지는지
+            System.out.printf("i=%d ",i);
+            int copy=i;
+
+            while(copy>2){
+                int one=copy%10;
+                if(one%10==0&&one!=0){//10,20,30 거름
+                    System.out.print(" 짝");
+                }
+                copy/=10;
 
             }
-            if((i/10)%3==0){
-                System.out.print("짝");
-            }
-        }
         }
     }
 }
