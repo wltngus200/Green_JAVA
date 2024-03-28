@@ -18,7 +18,7 @@ public class BBG_2_ReStart {
 
         Scanner scan = new Scanner(System.in);
         char[] answer = {'1', '2', '3'};//공식이 맞는지 확인을 위한 임시치 부여
-        char[] user = {'5', '9', '3'}; //1 스트라이크 0 볼 2 아웃
+        char[] user = {'9', '8', '3'}; //1 스트라이크 0 볼 2 아웃
 
         int strike = 0; //자리수와 문자 모두 일치
         int ball = 0; //문자만 일치
@@ -40,28 +40,9 @@ public class BBG_2_ReStart {
         System.out.printf("%d strike %d ball %d out", strike, ball, out);
 
 
-
-        //0-012 1-012 2-012로 순환
-/*
-        for (int i = 0; i < user.length; i++) { //user의 값
-            for (int j = 0; j < answer.length; j++) { //answer의 값
-                if (i == j && user[i]==answer[j]) {
-                    //끝자리로 가면 옳지 않은 결과->why??/
-                    strike+=1;
-                    break;
-                } else if (i!=j && user[i]==answer[j]) {
-                    ball += 1;
-                    break;
-                } else {
-                    out+=1;
-                }//아웃 제외 1칸에 들어가면 ㅇ그 외 상관 없잖아
-                //중복금지니까
-            }
-        }System.out.printf("%d strike %d ball %d out", strike, ball, out);
-*/
     }
 }
-
+/* 스캐너 임포트, 와일문 만들기, 매소드 활용, 랜덤값 부여*/
 
 /*
         while(true){
