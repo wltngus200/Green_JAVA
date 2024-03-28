@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayStudy2 {
     public static void main(String[] args){
-        int[] numArr=new int[10];//0~99
+        int[] numArr=new int[100];//0~99
         for(int i=0;i<numArr.length;i++){
             //이 배열의 기능은 크게 없고 속성(.)이 있는데
             numArr[i]=(i+1);//=쓰기

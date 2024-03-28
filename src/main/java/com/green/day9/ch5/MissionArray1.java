@@ -26,7 +26,7 @@ public class MissionArray1 {
             System.out.println("\n==================");
 
             for(int j=0;j<numArr.length;j++){
-                if(j==numArr.length){
+                if(j==numArr.length-1){
                     System.out.print(numArr[j]);
                     continue;
                 }System.out.printf("%d, ",numArr[j]);

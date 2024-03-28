@@ -6,7 +6,7 @@ public class ArrayEx6 {
         int[] score={79,88,91,33,100,55,95};
         int min=score[0];
         int max=score[0];
-        for(int i=1;i<score.length;i++){//length =7
+        for(int i=1;i<score.length;i++){//length 끝까지 돈다는 의미 숫자개념X 마이너스 n = 요소 n개를 뺌
             if(score[i]>max){
                 max=score[i];
             } if(score[i]<min){ //else if여도 되는게 첫 값과 두번째 값이 같으면 둘다 실행 안 되고, 다른 값이면 값이 바뀜
