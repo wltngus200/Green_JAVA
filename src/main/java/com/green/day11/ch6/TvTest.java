@@ -4,7 +4,7 @@ public class TvTest {
     public static void main(String[] args){
         Tv tv=new Tv();
         //반복문을 사용하여 100개의 TV를 만들었을 때. 동일한가? 주소값이 동일한가? ㄴㄴ 다 다름 이유: new가 붙어서 new(무조건 새거)
-        //Tv tv=new Tv(); Tv tv2=tv; 는 같음
+        //Tv tv=new Tv(); Tv tv2=tv;는 같음
         tv.color="red";
         tv.channel=10;//tv.은 tv를 호출하는 것 값 변경, 사용은 이전과 똑같음 대입= 읽기는 그냥 적기
         tv.power=true;

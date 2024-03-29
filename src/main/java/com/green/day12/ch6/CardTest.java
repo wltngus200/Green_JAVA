@@ -9,8 +9,8 @@ public class CardTest {
 
         System.out.println(Card.width);
 
-        //Card.kind="" X 안 됨
-        Card c1=new Card();
+        //Card.kind="" X 안 됨 //객체화가 안 되어서
+        Card c1=new Card();//객체화
         c1.kind="Heart";
         c1.number=7;
         System.out.printf("c1.kind: %s, c1.number: %d\n",c1.kind,c1.number);

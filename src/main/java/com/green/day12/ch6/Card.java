@@ -6,4 +6,5 @@ public class Card {
 
     static int width=100;//가로
     static int height=250;//세로
+
 }

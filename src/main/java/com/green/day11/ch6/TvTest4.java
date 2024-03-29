@@ -38,7 +38,7 @@ public class TvTest4 {
         }
         for(Tv tv: tvArr){
             System.out.println(tv.channel);
-            //포이치로는 배열을 수정할땐 안 씀. 배열이 가진 값을 바꿀때
+            //포 이치(for each)로는 배열을 수정할땐 안 씀. 배열이 가진 값을 바꿀때
             //  -A티비를 C티비로 C티비를 B티비로 같은 경우
             //배열이 가진 객체의 값을 수정
 

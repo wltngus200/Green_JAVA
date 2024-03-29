@@ -35,9 +35,10 @@ public class ArrayEx18 {
             }System.out.printf("%d열의 총점은 %d이고, 평균값은 %.2f입니다\n",i,sum2,(double)sum2/score.length);
         }System.out.println();
 
-        //가변배열 배열 내의 배열들의 길이가 다른 배열
+        //가변배열 : 배열 내의 배열들의 길이가 다른 배열
         //score[0]을 하면 혹시 해당 길이보다 긴 배열이 안에 있을 시 제대로 돌지 않을 수도 있음
         //위의 경우엔 해당 X
+
         /*
         0 100 20  30  40
         1 90  25  30  40

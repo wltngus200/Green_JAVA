@@ -3,7 +3,7 @@ package com.green.day12.ch6;
 public class Variable { //변수의 종류
     int iv; //인스턴스 변수=전역변수=Global Variable
 
-    //static이 안 붙으면 사용시 (값 넣을 때) 객체화 필수
+    //static이 안 붙으면 사용시 (값을 넣을 때) 객체화 필수
         //객체마다 다른 값을 넣고 싶으면 인스턴스
 
     static int cv;//클래스변수=스태틱 변수=전역변수(라고 부르긴 하나 성격이 조금 다름)

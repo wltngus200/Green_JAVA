@@ -9,7 +9,7 @@ public class ArrayEx12 {
         //출력하고 싶은 이름을 출력,대입 names[1]
         //구분을 하는 능력이 중요
         //프라모티브 레퍼런스의 차이는 값과 주소값 저장의 차이
-        //String aaa=""는 객체의 주소값
+        //String aa=""는 객체의 주소값
         //names에 저장하는 건 배열의 주소값
 
         System.out.println(names);//주소값

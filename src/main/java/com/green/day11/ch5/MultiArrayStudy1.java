@@ -12,7 +12,7 @@ public class MultiArrayStudy1 {
 
         System.out.println(score.length);
         //score[0] 또한 배열
-        int[] temp=score[0];
+        int[] temp=score[0];//이런 것도 가능
         int[][] temp2=score;
         //int[] temp3=score; X
         System.out.println(score[0].length);
