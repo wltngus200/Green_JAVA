@@ -8,7 +8,9 @@ public class TvTest {
         tv.color="red";
         tv.channel=10;//tv.은 tv를 호출하는 것 값 변경, 사용은 이전과 똑같음 대입= 읽기는 그냥 적기
         tv.power=true;
-        //.dot 연산자 점 연산자?
+        //.dot 연산자 도트 연산자 객체를 사용할 때 씀 객체의 주소값 점. 걔가 가진 속성 메소드 이용을 위해서는 '주소값 점'메소드 호출
+        //주소값.멤버필드가 가능한 것=상수만 가능(변경이 없으니까), 변수는 변경이 있어서 불가능
+        //tv.power로 멤버필드는 사용 못 함. 캡슈라 속성을 숨긴다. 메소드를 통해 가진 값을 얻어오고 수정(게터세터)
         System.out.printf("tv color: %s, channel:%d,power:%b\n",tv.color,tv.channel, tv.power);
 
         Tv tv2=new Tv();//주소값이 다른 별도의 tv

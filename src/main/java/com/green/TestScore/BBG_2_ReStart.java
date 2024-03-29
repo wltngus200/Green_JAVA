@@ -16,33 +16,41 @@ public class BBG_2_ReStart {
                                 ...
         */
 
-        Scanner scan = new Scanner(System.in);
+
+
         char[] answer = {'1', '2', '3'};//공식이 맞는지 확인을 위한 임시치 부여
-        char[] user = {'9', '8', '3'}; //1 스트라이크 0 볼 2 아웃
+
+        Scanner scan = new Scanner(System.in);//사용자에게 값을 입력받는 상황
 
         int strike = 0; //자리수와 문자 모두 일치
         int ball = 0; //문자만 일치
-        int out = 0; //문자가 들어가지 않음
 
-        for(int b=0;b<answer.length;b++){
-            for(int g=0;g<user.length;g++){
-                if(answer[b]==user[g]){
-                    if(b==g){
-                        strike++;
-                        continue;
-                    } else {
-                        ball++;
-                        continue;
+        do {System.out.print("3자리 숫자를 입력해 주세요.");
+            int input=scan.nextInt();//사용자에게 값을 입력
+            String strnum=Integer.toString(input);//int를 문자로
+            char[] user=strnum.toCharArray();//String 문자의 배열로!
+            strike=0;
+            ball=0;
+            for (int b = 0; b < answer.length; b++) {
+                for (int g = 0; g < user.length; g++) {
+                    if (answer[b] == user[g]) {
+                        if (b == g) {
+                            strike++;
+                            continue;
+                        } else {
+                            ball++;
+                            continue;
+                        }
                     }
-                }//out=3-(strike+ball);
-            }//out=3-(strike+ball);  //어디에 오느냐에 따라 수치차이가 보임
-        }//out=3-(strike+ball);
-        System.out.printf("%d strike %d ball %d out", strike, ball, out);
-
-
+                }
+            }
+            System.out.printf("%d strike %d ball %d out\n", strike, ball, 3-(strike+ball));
+        }while(strike!=3);
     }
+    //while 문을 반복할 수록 수치가 이상해짐 아웃이 -3이 된다거나//이건 해결한 거 같은데
+    //while문 안에 스트라이크 볼 아웃을 넣으면 스코프 밖에서 그 값을 출력할 수 없고 넣자니 오류가 나넹 ㅎ
 }
-/* 스캐너 임포트, 와일문 만들기, 매소드 활용, 랜덤값 부여*/
+/*  와일문 만들기, 매소드 활용, 랜덤값 부여 input 값 수정 */
 
 /*
         while(true){

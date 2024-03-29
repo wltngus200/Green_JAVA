@@ -7,6 +7,7 @@ public class Tv {
     int channel;
     //no usages를 끄는 법: 세팅>에디터>inlay hints>code bision>usages 체크
     //모두 다른 공간 가짐 이 값을 수정하면 해당하는 공간 안에서 수정
+        //3가지 값 저장
 
     //메소드..?
     //여러개의 값을 가질 수는 있다??
@@ -22,7 +23,7 @@ public class Tv {
     void channelUp() {
         channel++;
     }
-
+    //메소드는 외부에서 값을 받을 수 있다 ()를 통해 받음 현재는 닫혀있다.
     void channelDown() {
         channel--;
     }
