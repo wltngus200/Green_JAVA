@@ -9,7 +9,7 @@ public class Variable { //변수의 종류
     static int cv;//클래스변수=스태틱 변수=전역변수(라고 부르긴 하나 성격이 조금 다름)
     //static이 붙으면 객체화와는 상관이 없다
     //객체화를 100개를 해도 공간 1개 클래스 이름으로 접근해서 쓰는 공간
-    //static이 붙으면 뭇너와 같다 클래스가 메모리에 올라감. static이 붙으면 무조건 올라감
+    //static이 붙으면 문서와 같다 클래스가 메모리에 올라감. static이 붙으면 무조건 올라감
 
     void method() {
         int lv = 0;//메소드 안 변수=지역변수=Local Variable
