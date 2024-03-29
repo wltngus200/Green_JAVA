@@ -29,6 +29,7 @@ public class BBG_2_ReStart {
             int input=scan.nextInt();//사용자에게 값을 입력
             String strnum=Integer.toString(input);//int를 문자로
             char[] user=strnum.toCharArray();//String 문자의 배열로!
+
             strike=0;
             ball=0;
             for (int b = 0; b < answer.length; b++) {
@@ -46,6 +47,20 @@ public class BBG_2_ReStart {
             }
             System.out.printf("%d strike %d ball %d out\n", strike, ball, 3-(strike+ball));
         }while(strike!=3);
+
+        /*
+          int[] input(int val){
+        int copy=val;
+        int[] input=new int[3];
+        for(int i=0;i<3;i++){
+            input[i]=val%10;
+            copy=copy/10;
+            val=copy;
+        }
+        return input;
+    }
+    인트 배열로 비교 불가능하려나 근데 위 식으로 가면 625넣으면 526으로 나옴
+         */
     }
     //while 문을 반복할 수록 수치가 이상해짐 아웃이 -3이 된다거나//이건 해결한 거 같은데
     //while문 안에 스트라이크 볼 아웃을 넣으면 스코프 밖에서 그 값을 출력할 수 없고 넣자니 오류가 나넹
