@@ -5,7 +5,7 @@ public class CardTest {
         System.out.println(Card.width);//static이라 객체화가 필요 없음! //'클래스 이름.'= System.out도 스태틱
         System.out.println(Card.height);
 
-        Card.width=110;//static 객체화와 상관 없음 객체가 늘어나도 1개(모든 객체가 공통으로 가지고 공통으로 수정)
+        Card.width=110;//static 객체화와 상관 없음 객체가 늘어나도 1개(모든  객체가 공통으로 가지고 공통으로 수정)
 
         System.out.println(Card.width);
 
