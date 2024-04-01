@@ -2,11 +2,11 @@ package com.green.day13.ch6;
 
 public class CallStackTest {
     public static void main(String[] args){//p.262
-        firstMethod();//메소드 호출(도트 연산자 없이=객체화 없이 호출=스태틱메소드 호출)
+        firstMethod();//메소드 호출(객체화 없이 호출=스태틱메소드 호출)
         //Math.random();처럼 클래스.메소드 이름을 했을 텐데 그러지 않았다=현재 클래스에 있다
-        //CallStackTest.firstMethod();로도 가능하나 많진 않다
+        //CallStackTest.firstMethod();로도 가능하나 많진 않다//현재 클래스의 이름
         //메소드 안에도 메소드 호출 가능
-        //JVM에 메인메소드 호출>첫번째 메소드 실행>그 안의 세컨드 메소드>
+        //JVM에 메인메소드 호출>첫번째 메소드 실행>그 안의 세컨드 메소드
         //실행되면서 메모리 올라가고 리턴(생략됨)에서 메모리에서 빠짐(인스턴스도 마찬가지)
         System.out.println("-----------------");
     }
