@@ -33,9 +33,9 @@ public class MyMethodTest {
     }
 }
 //클래스 안에는 비슷한 것 끼리 모아야 함
-//위치파악(패키지??)>리턴,void>메소드명>파라미터
+//위치파악: 리턴,void>메소드명>파라미터
 class MyMethod{
-    void checkOddEven(int n){
+    void checkOddEven(int n){//남이 만든 메소드 사용법 마우스 올리면 접근제어자와 원하는 타입 알려줌
         String an=(n%2==0?"짝수":"홀수");
         System.out.printf("입력하신 숫자는 %d이며, %s입니다.\n",n,an);//한 줄로도 가능
     }

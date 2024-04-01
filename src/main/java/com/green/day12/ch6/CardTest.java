@@ -5,13 +5,13 @@ public class CardTest {
         System.out.println(Card.width);//static이라 객체화가 필요 없음! //'클래스 이름.'= System.out도 스태틱
         System.out.println(Card.height);
 
-        Card.width=110;
+        Card.width=110;//static 객체화와 상관 없음 객체가 늘어나도 1개(모든 객체가 공통으로 가지고 공통으로 수정)
 
         System.out.println(Card.width);
 
-        //Card.kind="" X 안 됨 //객체화가 안 되어서
+        //Card.kind="" X 안 됨 //객체화가 안 되어서 //스태틱 변수가 아님!
         Card c1=new Card();//객체화
-        c1.kind="Heart";
+        c1.kind="Heart";//인스턴스 변수는 객체가 늘어남에 따라 개수의 변경
         c1.number=7;
         System.out.printf("c1.kind: %s, c1.number: %d\n",c1.kind,c1.number);
         System.out.println(c1.width);//사용은 되나 static은 이러한 사용을 지양
