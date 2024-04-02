@@ -19,6 +19,7 @@ public class PrimitiveRefEx {//p.265
     }
     public static void changeNum(Numbox n){//nb와 다른 존재 주소값을 복사해주었을 뿐 같은 값을 들고있는 동등한 존재
         //n=new Numbox();//다른 존재라는 증거 //공간이 다름 다른 값을 저장할 수 있다.
+        //새로운 공간을 만들고 주소값 복사 다른 값 주게
         n.num=1000;//매개변수 스코프가 끝나면 사라질 존재
         /*
         스택메모리에 1.nb라는 지역변수 할당 3.numbox의 주소값을 복사받음 5.numbox n에 주소값 복사 7.n은 스코프가 끝나 지워짐
@@ -31,7 +32,6 @@ public class PrimitiveRefEx {//p.265
          */
     }
 }
-class Numbox{
+class Numbox {
     int num;
-
 }

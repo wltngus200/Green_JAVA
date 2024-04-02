@@ -3,11 +3,12 @@ package com.green.day13.ch6;
 public class ReferenceReturnEx {
     public static void main(String[] args){
         Numbox nb=new Numbox();//객체생성
+        //Numbox nb2=nb;//쉘로우카피 동일 동등
         nb.num=10;//
 
-        Numbox nb2=myCopy(nb);
+        Numbox nb2=myCopy(nb);//주소값이 다름(==비교시 false)
         System.out.printf("nb.num: %d\n",nb.num);//10
-        System.out.printf("nb2.num: %d\n",nb2.num);//10
+        System.out.printf("nb2.num: %d\n",nb2.num);//10 //동등하지만 동일하지 않다
 
         nb.num=200;
         System.out.printf("nb.num: %d\n",nb.num);//100

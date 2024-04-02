@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ReferenceParamEx3 {
     public static void main(String[] args){
         int[] arr={3,2,1,6,5,4,10};
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));//스태틱 메소드//문자열을 만드는 것이 목적
 
         printIntArr(arr);//위와 결과 똑같이(변경이 있어도)
     }

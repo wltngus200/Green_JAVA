@@ -19,14 +19,14 @@ public class CardTest {
                     case 11 -> "J";
                     case 12 -> "Q";
                     case 13 -> "K";
-                    default -> String.valueOf(i);
+                    default -> String.valueOf(i);//정수를 문자열로
                 };
                 cards[idx++] = c;
             }
         }
         System.out.println("-----------");
         for(Card c: cards){
-            System.out.printf("%s(%s)\n",c.shape,c.number);
+            System.out.printf("%s %s\n",c.shape,c.number);
         }
     }
 }
