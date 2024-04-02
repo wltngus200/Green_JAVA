@@ -9,7 +9,7 @@ public class CardTest {
         for(int k=0;k<shapes.length;k++) {
             for (int i = 1; i <= 13; i++) {
                 //System.out.println(idx++);//0~51번방
-                Card c = new Card();
+                Card c = new Card();//모양과 번호를 멤버변수로 가짐
                 //cards[idx++] = c; //아래에 있을 때와 차이 없다 주소값을 알고 있는 c의 주소값을 복사해서 줌
                 //c.shape랑 c.number로 접근가능 //주소값 알려주고 옮기기=옮기고 알려주기
                 //객체=주소값만 알면 접근할 수 있는 존재

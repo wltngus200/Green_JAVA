@@ -3,6 +3,7 @@ package com.green.day14.ch6;
 public class StarTest {
     public static void main(String[] args){
     Star star=new Star();
+
     star.singlePrintint(3);//*****(개행)
     System.out.println("-----------");
 
@@ -21,8 +22,6 @@ public class StarTest {
     star.righttrianglePrint(5);
     System.out.println("-----------");
 
-    star.trianglePrintint(7);
-    System.out.println("-----------");
     }
 }
 class Star{
