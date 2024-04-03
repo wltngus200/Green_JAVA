@@ -1,4 +1,4 @@
-package com.green.TestScore;
+package com.green.TestScore.Hang;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,18 +6,24 @@ import java.util.Scanner;
 public class HangMan {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("문제를 입력하세요.");
-        String input_answer = scan.nextLine();//사용자가 입력한 값을 정답으로
 
+        /*
+        WordList word=new WordList();//다른 파일의 리스트를 받아오기
+        String input_answer=WordList.random(word.getWord());
         char[] answer = input_answer.toCharArray();//문제를 문자열로 전환
-        System.out.println(Arrays.toString(answer));//정답확인용
+        //System.out.println(Arrays.toString(answer));//정답확인용
         //만약 스페이스가 있다면 스페이스로 표시하게 가능?? 예외처리
 
         //char[] answer_copy=answer; //미스! 주소값 복사를 해버려 카피를 바꾸면 다같이 바뀌어버림
         char[] answer_copy = new char[answer.length];
         for (int i = 0; i < answer.length; i++) {//배열을 복사하여 글자 개수만큼 언더바로 표시
             answer_copy[i] = '_';
-        }
+        }위의 부분을 별도의 파일에서 메소드 하고 값을 입력받아오기
+         */
+
+
+        //System.out.println(Arrays.toString(answer_copy));//사용자의 입장 = 글자 수 확인
+
 /*
 메소드
  */
