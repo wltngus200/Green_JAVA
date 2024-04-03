@@ -8,8 +8,13 @@ public class HangMan {
         Scanner scan = new Scanner(System.in);
 
         /*
+        System.out.println(answer);=bedroom
+        System.out.println(Arrays.toString(answer));[b,e,d,r,o,o,m]
+        */
+
         WordList word=new WordList();//다른 파일의 리스트를 받아오기
-        String input_answer=WordList.random(word.getWord());
+        //바꾸는 와중에 문제 터지네
+        String input_answer="opple";
         char[] answer = input_answer.toCharArray();//문제를 문자열로 전환
         //System.out.println(Arrays.toString(answer));//정답확인용
         //만약 스페이스가 있다면 스페이스로 표시하게 가능?? 예외처리
@@ -18,15 +23,10 @@ public class HangMan {
         char[] answer_copy = new char[answer.length];
         for (int i = 0; i < answer.length; i++) {//배열을 복사하여 글자 개수만큼 언더바로 표시
             answer_copy[i] = '_';
-        }위의 부분을 별도의 파일에서 메소드 하고 값을 입력받아오기
-         */
-
-
+        }//위의 부분을 별도의 파일에서 메소드 하고 값을 입력받아오기
         //System.out.println(Arrays.toString(answer_copy));//사용자의 입장 = 글자 수 확인
 
-/*
-메소드
- */
+        //메소드
 
         char input_user;
         while (true) {//올바르지 않은 값이 입력되었을 때의 분기문
@@ -52,19 +52,20 @@ public class HangMan {
             }System.out.println(Arrays.toString(answer_copy));
         }
     }
-}
-class HangCheck{
-    void hangCheck(char v, char[] ans, char[] copy) {
-        char input_user = v;
-        char[] answer = ans;
-        char[] answer_copy = copy;
-        for (int i = 0; i < answer.length; i++) {//반복을 통해 입력한 문자가 배열에 있는지 확인
-            if (input_user == answer[i]) {
-                answer_copy[i] = input_user;
+    }
+
+    class HangCheck {
+        void hangCheck(char v, char[] ans, char[] copy) {
+            char input_user = v;
+            char[] answer = ans;
+            char[] answer_copy = copy;
+            for (int i = 0; i < answer.length; i++) {//반복을 통해 입력한 문자가 배열에 있는지 확인
+                if (input_user == answer[i]) {
+                    answer_copy[i] = input_user;
+                }
             }
         }
     }
-}
 
 
 

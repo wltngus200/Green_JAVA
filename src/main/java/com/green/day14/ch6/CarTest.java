@@ -26,7 +26,7 @@ class Car{
         /*this.color="-red-";
         this.gearType="manual";
         this.door=5;*/
-        this("red","auto",5);//this()는 메소드 호출
+        this("red","auto",5);//this()는 메소드 호출//딥카피 너와 같은 객체를 하나 더 생성
 
     }//this.멤버필드, 메소드
     //this(); 생성자

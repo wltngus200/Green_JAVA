@@ -23,15 +23,15 @@ class Deck{
         String[] kind={"clover","heart","spade","diamond"};
         for(int i=0;i<kind.length;i++){
             for(int s=1;s<=13;s++){
-               Card c=new Card();//객체생성
-               c.kind=kind[i];//c에 주소값을 담음
-               c.number=switch(s){
-                   case 1 -> "A";
-                   case 11 -> "J";
-                   case 12 -> "Q";
-                   case 13 -> "K";
-                   default -> String.valueOf(s);
-               };cards[idx++]=c;//이 과정을 거치지 않으면 다 날아버림
+                Card c=new Card();//객체생성
+                c.kind=kind[i];//c에 주소값을 담음
+                c.number=switch(s){
+                    case 1 -> "A";
+                    case 11 -> "J";
+                    case 12 -> "Q";
+                    case 13 -> "K";
+                    default -> String.valueOf(s);
+                };cards[idx++]=c;//이 과정을 거치지 않으면 다 날아버림
             }
         }
     }
