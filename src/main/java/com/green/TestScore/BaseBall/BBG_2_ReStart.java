@@ -1,4 +1,4 @@
-package com.green.TestScore;
+package com.green.TestScore.BaseBall;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class BBG_2_ReStart {
                                 ...
         */
 
-
+        //p.469의 indexOf를 사용하면 된다 최초 1회 알려주지만 중복없으니까 0404
 
         char[] answer = {'1', '2', '3'};//공식이 맞는지 확인을 위한 임시치 부여
 

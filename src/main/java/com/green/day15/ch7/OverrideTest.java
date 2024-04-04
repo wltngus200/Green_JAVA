@@ -8,6 +8,8 @@ public class OverrideTest {
         //child.attack();
         System.out.println(p.age);
         child.doubleAttack();
+        p.attack();//부모 클래스의 메소드를 사용하고 싶다면 부모 객체화 후 사용
+        //오버라이딩은 덮어쓰기가 아님 부모도 나도 가지고 있다의 개념
     }
 }
 class Parent{
@@ -24,7 +26,7 @@ class Parent{
 
     void attack(){
         System.out.println("부모가 적을 공격한다!");
-    }
+    }//parent를 객체화 하면 기준이 얘가 됨
     public void defense(){
         System.out.println("부모가 적의 공격을 방어한다!");
     }

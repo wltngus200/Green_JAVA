@@ -1,4 +1,4 @@
-package com.green.TestScore;
+package com.green.TestScore.BaseBall;
 
 import java.util.Arrays;
 import java.util.Scanner;
