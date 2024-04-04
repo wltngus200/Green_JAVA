@@ -23,6 +23,7 @@ public class VarScope {
         for(int i=0;i<5;i++){//i는 바깥에 있지만 이 안의 함수로 취급됨
             int b=0;
             b=b+i;//해도 위에서 0으로 돌려버림
+            //변수초기화는 반복문 바깥에서
         }
         int i=0;
         for(/*blank*/;i<5;i++){//i는 바깥에 있지만 이 안의 함수로 취급됨
