@@ -20,6 +20,10 @@ public class BBG_2_ReStart {
 
         char[] answer = {'1', '2', '3'};//공식이 맞는지 확인을 위한 임시치 부여
 
+        int x=(int)(Math.random()*10);
+
+
+
         Scanner scan = new Scanner(System.in);//사용자에게 값을 입력받는 상황
 
         int strike = 0; //자리수와 문자 모두 일치
@@ -45,7 +49,7 @@ public class BBG_2_ReStart {
                     }
                 }
             }
-            System.out.printf("%d strike %d ball %d out\n", strike, ball, 3-(strike+ball));
+            System.out.printf("%d strike %d ball %d out\n\n", strike, ball, 3-(strike+ball));
         }while(strike!=3);
 
         /*

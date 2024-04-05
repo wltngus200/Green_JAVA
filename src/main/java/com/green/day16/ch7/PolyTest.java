@@ -32,6 +32,8 @@ public class PolyTest {
     2. 자식타입의 변수는 부모 객체의 주소값을 담을 수 없다
     //Dog dog2=new Animal();
     //Dog dog3=(Dog)new Animal(); 강제형변환도 안 됨
+    //Dog dog_4=ani_2(불독객체를 담고 있어도)에러 타입이 부모타입이기때문
+    //Dog dog_4=(bullDog)ani_2 강제형변환
     3. 타입은 알고있는 메소드만 호출 될 수 있고, 실행되는 기준은 객체 기준이다
     //멤버필드는 프라이빗으로 막을 것이기 때문에 상관 x
  */

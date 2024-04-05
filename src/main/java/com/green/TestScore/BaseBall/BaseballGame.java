@@ -36,8 +36,8 @@ public class BaseballGame {
 
 
         int strike=0;
-        int out=0;
         int ball=0;
+        int out=0;
         char[] answer;
         char[] result;//위에
         /*for(int i=0;i<answer.length;i++) {
