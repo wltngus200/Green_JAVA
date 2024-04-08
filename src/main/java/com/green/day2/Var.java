@@ -9,8 +9,8 @@ public class Var {
         num = 20; //리터럴(literal)
         System.out.println(num);
 
-        num=20+30;
-        System.out.println(num);
+        num=20+30;//write
+        System.out.println(num);//read
 
         num=10*40;
         System.out.println(num);

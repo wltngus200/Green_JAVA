@@ -6,7 +6,7 @@ public class BBG_2_ReStart {
     public static void main(String[] args) {
         /*
         새로운 필드 개척 **세 자리에 중복되는 숫자는 없다!
-        0. 수식이 맞는지 확인할 임시 수치 입력
+        0. 반복문이 맞는지 확인할 임시 수치 입력
         1. 중복이 없다면 겹치는 숫자가 있는지를 먼저 확인한다
             -있다면 볼 or 스트라이크
             -없다면 아웃
@@ -21,8 +21,6 @@ public class BBG_2_ReStart {
         char[] answer = {'1', '2', '3'};//공식이 맞는지 확인을 위한 임시치 부여
 
         int x=(int)(Math.random()*10);
-
-
 
         Scanner scan = new Scanner(System.in);//사용자에게 값을 입력받는 상황
 

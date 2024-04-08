@@ -11,8 +11,10 @@ public class ForLoop {
         */
 
         /*
+        int n=1;
         for(int j=5;j<11;j++){
             System.out.println((j-4)+".안녕");
+            System.out.println((n++)+".안녕");
         }
         */
 
