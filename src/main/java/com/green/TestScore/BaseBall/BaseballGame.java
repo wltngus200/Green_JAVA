@@ -23,13 +23,15 @@ public class BaseballGame {
         PlayBall play=new PlayBall(3);
         System.out.println("3자리 정수값을 입력하세요.");
         int input=scan.nextInt();
-        play.ball();
+
 
         char[] result=new char[3];
+        String inputstr;
         while(true){
             System.out.print("숫자를 입력하세요.");
-            String input=scan.nextLine();
-            result=input.toCharArray();
+
+            inputstr=scan.nextLine();
+            result=inputstr.toCharArray();
             System.out.print(result);
             }
         //int user;
