@@ -9,8 +9,8 @@ public class Dealer extends Gamer {
             //프로텍티드라도 자손클래스(다른 패키지에 있는 것도)접근 가능!
             //별도로 선언할 필요 없다!
             Card c = cards.get(i);//리스트의 값을 받아오는 법! 배열과 다르다 arr[i]<->list.get(i)
-            score = c.getPoint();
-        }
+            score += c.getPoint();
+        }//다른 데도 쓰이면 메소드로 관리
             return score <= CAN_RECEIVE_POINT;
     }
 }

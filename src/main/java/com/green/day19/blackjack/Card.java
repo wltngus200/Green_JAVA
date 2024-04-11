@@ -2,7 +2,7 @@ package com.green.day19.blackjack;
 
 public class Card {
     private String pattern;//무늬 //private에 값넣기 setter,생성자
-    private String denomination;//숫자
+    private String denomination;//숫자 //게터만 있어 파이널이 있어도 상관 없음
     public Card(String pattern,String denomination){//클래스가 퍼블릭이면 생성자도 퍼블릭으로
         this.pattern=pattern;
         this.denomination=denomination;
@@ -12,11 +12,12 @@ public class Card {
     }
     public String getDenomination(){
         return denomination;
-    }
+    }//한 번 값이 입력되면 수정할 수 없다 (이뮤터블?)
 
     @Override
     public String toString() {//String을 반환하는 toString()
-        return String.format("%s(%s)",pattern,denomination);
+        return String.format("%s(%s)",pattern,denomination);//객체를 문자열로 표현
+        //String str="반가워"+c를 하면 toString을 자동 호출
     }
     public int getPoint(){
         int score=switch(this.denomination){

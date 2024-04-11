@@ -8,7 +8,7 @@ public class CardDeck {
     public static final int CARD_COUNT = 13;
     private List<Card> list;
 
-    public CardDeck() {
+    public CardDeck() {//얘를 객체화하면 52개의 카드가 생성되고 그걸 리스트에 담음
         list=new ArrayList();
         for (int i = 0; i < PATTERNS.length; i++) {
             for (int j = 1; j <= CARD_COUNT; j++) {
