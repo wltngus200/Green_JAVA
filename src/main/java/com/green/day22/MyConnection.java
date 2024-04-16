@@ -1,12 +1,12 @@
 package com.green.day22;
 
 import java.sql.*;
-
-public class MyConnection {
+//싱글톤 SingleTon
+public class MyConnection {//연결을 담당하는 커넥션 객체
     private final String DRIVER="org.mariadb.jdbc.Driver";
-    private final String HOST="localhost";
-    private final String PORT="3306";
-    private final String DB_NAME="market_db";
+    private final String HOST="localhost";//다른 컴퓨터면 ip주소로
+    private final String PORT="3306";//기본포트면 생략가능
+    private final String DB_NAME="market_db";//어디에 접근을 할 것인가
     private final String USERNAME="root";
     private final String PASSWORD="green502";
 
@@ -14,7 +14,7 @@ public class MyConnection {
         String url=String.format("jdbc:mariadb://%s:%s/%s",HOST, PORT, DB_NAME);
         Class.forName(DRIVER);
         Connection conn= DriverManager.getConnection(url,USERNAME,PASSWORD);
-        System.out.println("DB 접속 완료!");
+        System.out.println("DB 접속 완료!");//getConnectin=static
         return conn;
     }
     public void close(Connection conn){

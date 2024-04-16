@@ -31,7 +31,7 @@ public class MemberDAO {
         try {//데이터베이스에 보내면 이런 식이다. 외울필요는 없다
             conn = myConn.getConn();
             stat = conn.createStatement();
-            result = stat.executeUpdate(sql);
+            result = stat.executeUpdate(sql);//내가 몇개의 행에 영향을 미쳤는지
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
@@ -45,27 +45,25 @@ public class MemberDAO {
         List<MemberEntity> list =new ArrayList();
         //아이디 이름 데뷔날짜(내림차순)
         String sql=String.format("SELECT mem_id, mem_name, debut_date FROM member"+"ORDER BY debut_date DESC");
-
-
         System.out.println(sql);
-        Connection conn = null;//연결담당
-        Statement stat = null;//커넥션이 만들어냄, 쿼리문을 만들어낸다
-        ResultSet rs= null;//대략의 데이터를 모두 수용//이상태로는 처리하기 힘들어 바꿀 것
-        try {
-            conn=myConn.getConn();
+
+        try (Connection conn = myConn.getConn();//연결담당
+        Statement stat = conn.createStatement();//커넥션이 만들어냄, 쿼리문을 만들어낸다
+        ResultSet rs= stat.executeQuery(sql)){//대략의 데이터를 모두 수용 //이상태로는 처리하기 힘들어 바꿀 것
+
+        //while(rs.next())//불린타입 while문과 if문에 들어갈 수 있는 것
+            //String memId=rs.memId=
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }finally{
-            myConn.close(rs,stat,conn);
+            //myConn.close(rs,stat,conn);
         }
 
-        /*try{
-            Connection conn= myConn.getConn();
-            Statement stat= conn.createStatement();
-            ResultSet rs=stat.executeQuery(sql);
-
+        /*try(Connection conn= myConn.getConn()){
+            }catch{
 
                     MemberEntity member=new MemberEntity();
                     list.add(member);
@@ -76,6 +74,32 @@ public class MemberDAO {
         return list;
 
     }
+    public MemberEntity selMember(String memId){
+        String sql =String.format("SELECT mem_id, mem_name, mem_number, addr" +
+                ", phone1, phone2, height,debut_date"+
+                " FROM member WHERE mem_id='%s'",memId);
+        System.out.println(sql);
+        try (Connection conn = myConn.getConn();
+             Statement stat = conn.createStatement();
+             ResultSet rs= stat.executeQuery(sql)){
+            if(rs.next()){//불린타임 트루면 개체가 있다
+                MemberEntity entity =new MemberEntity();
+                entity.setMemId(memId);
+                entity.setMemName(rs.getNString("mem_name"));
+                entity.setAddr(rs.getNString("addr"));
+                entity.setPhone1(rs.getNString("phone1"));
+                entity.setPhone2(rs.getNString("phone2"));
+                entity.setMemName(rs.getNString("addr"));
+                return entity;
+            }
+            return null;
+        }catch(SQLException e){
+            throw new RuntimeException(e);
+        }catch(ClassNotFoundException e){
+            throw new RuntimeException(e);
+        }
+    }
+
 
     int updMember(MemberEntity entity) {//변경
         String mid = "";//아무것도 없는 빈 문자열//여기에 쿼리문을 추가해간다
@@ -127,13 +151,13 @@ public class MemberDAO {
         String sql = String.format("DELETE FROM member WHERE mem_id='%s'",entity.getMemId());//string이라서 홑따옴표
 
         System.out.println(sql);
-        Connection conn = null;
-        Statement stat = null;
-        int result = 0;
+        Connection conn = null;//커넥션 얻어오고
+        Statement stat = null;//쿼리 보낼 수 있게
+        int result = 0;//영향받은 행
         try {
             conn = myConn.getConn();
             stat = conn.createStatement();
-            result = stat.executeUpdate(sql);
+            result = stat.executeUpdate(sql);//인서트 업데이트 딜리트
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
@@ -193,6 +217,14 @@ class MemberDAODeleteTest{
         int affectdRow=dao.delMemberEntity(member);
         System.out.printf("affectedRow: %d\n", affectdRow);
 
+    }
+}
+
+class SelMemberTest{
+    public static void main(String[] args){
+        MemberDAO dao=new MemberDAO();
+        MemberEntity entity=dao.selMember("WMN");
+        System.out.println(entity);
     }
 }
 
