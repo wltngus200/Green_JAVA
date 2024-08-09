@@ -12,5 +12,5 @@ import static java.util.Objects.hash;
 public class Notion {
     public void Shout(){
       System.out.println("Hello");
-    }
+    } //상속 테스트 했던 거
 }
